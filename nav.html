@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body class="m-page">
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="catalog.html" style="display: block; margin-bottom: 20px;">
+            Каталог
+        </a>
+        <a href="catalog-empty.html" style="display: block; margin-bottom: 20px;">
+            Каталог (Пусто)
+        </a>
+        <a href="search.html" style="display: block; margin-bottom: 20px;">
+            Результаты поиска
+        </a>
+        <a href="search-empty.html" style="display: block; margin-bottom: 20px;">
+            Результаты поиска (Пусто)
+        </a>
+
+        <hr style="margin-bottom: 20px;">
+        <a href="catalog-item.html" style="display: block; margin-bottom: 20px;">
+            Карточка
+        </a>
+        <a href="catalog-item.html" style="display: block; margin-bottom: 20px;">
+            Карточка (без аккаунта)
+        </a>
+        <hr style="margin-bottom: 20px;">
+
+        <a href="favourite.html" style="display: block; margin-bottom: 20px;">
+            Избранное
+        </a>
+        <a href="favourite-empty.html" style="display: block; margin-bottom: 20px;">
+            Избранное (Пусто)
+        </a>
+        <a href="compare.html" style="display: block; margin-bottom: 20px;">
+            Сравнение товаров
+        </a>
+        <a href="compare-empty.html" style="display: block; margin-bottom: 20px;">
+            Сравнение товаров (Пусто)
+        </a>
+        <a href="404.html" style="display: block; margin-bottom: 20px;">
+            404
+        </a>
+
+        <a href="about.html" style="display: block; margin-bottom: 20px;">
+            О компании
+        </a>
+        <a href="blog.html" style="display: block; margin-bottom: 20px;">
+            Блог
+        </a>
+        <a href="blog-item.html" style="display: block; margin-bottom: 20px;">
+            Блог - полная статья
+        </a>
+        <a href="blog-item2.html" style="display: block; margin-bottom: 20px;">
+            Блог Акций
+        </a>
+        <a href="contacts.html" style="display: block; margin-bottom: 20px;">
+            Контакты
+        </a>
+        <a href="contacts2.html" style="display: block; margin-bottom: 20px;">
+            Контакты (отправлено)
+        </a>
+        <a href="conf.html" style="display: block; margin-bottom: 20px;">
+            Политика конфиденциальности
+        </a>
+        <a href="delivery.html" style="display: block; margin-bottom: 20px;">
+            Доставка и оплата
+        </a>
+
+        <hr style="margin-bottom: 20px;">
+
+        <a href="cart.html" style="display: block; margin-bottom: 20px;">
+            Корзина
+        </a>
+        <a href="cart-empty.html" style="display: block; margin-bottom: 20px;">
+            Корзина (Пусто)
+        </a>
+        <a href="order.html" style="display: block; margin-bottom: 20px;">
+            Оформление заказа
+        </a>
+        <a href="order-thank.html" style="display: block; margin-bottom: 20px;">
+            Заказ оформлен
+        </a>
+        <a href="order-thank2.html" style="display: block; margin-bottom: 20px;">
+            Заказ оформлен самовывоз
+        </a>
+
+        <hr style="margin-bottom: 20px;">
+
+        <a href="auth.html" style="display: block; margin-bottom: 20px;">
+            Авторизация
+        </a>
+        <a href="reg.html" style="display: block; margin-bottom: 20px;">
+            Регистрация
+        </a>
+        <a href="recover-pass.html" style="display: block; margin-bottom: 20px;">
+            Восстановление пароля
+        </a>
+        <a href="recover-pass2.html" style="display: block; margin-bottom: 20px;">
+            Восстановление пароля 2
+        </a>
+        <a href="recover-pass3.html" style="display: block; margin-bottom: 20px;">
+            Восстановление пароля 3
+        </a>
+
+        <hr style="margin-bottom: 20px;">
+
+        <a href="profile.html" style="display: block; margin-bottom: 20px;">
+            Мой профиль
+        </a>
+        <a href="profile2.html" style="display: block; margin-bottom: 20px;">
+            Мой профиль (Нет заказов)
+        </a>
+        <a href="profile-edit.html" style="display: block; margin-bottom: 20px;">
+            Личные данные
+        </a>
+        <a href="order-item.html" style="display: block; margin-bottom: 20px;">
+            Профиль - Страница заказа
+        </a>
+        <a href="address.html" style="display: block; margin-bottom: 20px;">
+            Адрес
+        </a>
+        <a href="address-edit.html" style="display: block; margin-bottom: 20px;">
+            Редактирование адреса
+        </a>
+        <a href="address-add.html" style="display: block; margin-bottom: 20px;">
+            Адрес добавить
+        </a>
+        <a href="change-pass.html" style="display: block; margin-bottom: 20px;">
+            Смена пароля
+        </a>
+
+
+
+
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#quickOrder">
+            Быстрый заказ
+        </button>
+
+
+        <code>
+
+            @@include
+            ('components/page-blocks/_filter-slider.html',{ <br>
+            "start1":"0", <br>
+            "start2":"30000", <br>
+            "min":"1000", <br>
+            "max":"100000", <br>
+            })
+
+        </code>
+    </div>
+
+
+
+
+
+
+
+
+    <!--  -->
+    <div class="modal" id="loginModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="h2 text-center">
+                Авторизация
+            </div>
+            <button class="close-btn _close-modal">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6.5L6 18.5" stroke="#929798" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6 6.5L18 18.5" stroke="#929798" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <form action="" class="modal-form">
+                <div class="fg">
+                    <label>Email:</label>
+                    <input type="text" placeholder="Введите данные для авторизации">
+                </div>
+                <fieldset class="fg">
+                    <label>Пароль:</label>
+                    <div class="fg__field">
+                        <input type="password" placeholder="Введите пароль">
+                        <button type="button" class="pass-toggle">
+                            <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.3">
+                                    <path d="M8 7.5C8 8.03043 8.21071 8.53914 8.58579 8.91421C8.96086 9.28929 9.46957 9.5 10 9.5C10.5304 9.5 11.0391 9.28929 11.4142 8.91421C11.7893 8.53914 12 8.03043 12 7.5C12 6.96957 11.7893 6.46086 11.4142 6.08579C11.0391 5.71071 10.5304 5.5 10 5.5C9.46957 5.5 8.96086 5.71071 8.58579 6.08579C8.21071 6.46086 8 6.96957 8 7.5Z" stroke="#111417" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M19 7.5C16.6 11.5 13.6 13.5 10 13.5C6.4 13.5 3.4 11.5 1 7.5C3.4 3.5 6.4 1.5 10 1.5C13.6 1.5 16.6 3.5 19 7.5Z" stroke="#111417" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                </fieldset>
+
+                <button class="modal-form__btn m-btn m-btn-blue">
+                    <span>Авторизоваться</span>
+                </button>
+                <div class="modal-form__nav">
+                    <div class="m-check">
+                        <input type="checkbox">
+                        <label>
+                            <span>
+                            Запомнить меня
+                        </span>
+                        </label>
+                    </div>
+                    <a href="" class="modal-form__link m-btn m-btn-text">
+                        <span>Восстановить пароль</span>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal map-modal" id="mapModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6.5L6 18.5" stroke="#929798" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6 6.5L18 18.5" stroke="#929798" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <div class="contact-address">
+                <img src="img/marker.svg" alt="">
+                <div class="contact-address__content">
+                    <div class="contact-address__street text15">
+                        г. Артём, ул. Пионерская 1 стр 2,
+                    </div>
+                    <div class="contact-address__desc">
+                        <div class="text13">
+                            Мы находимся на выезде на улицу вокзальную рядом с птичьим рынком
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7397255bef66cd533e96c19d2dfcc7d712a4c54744880b73148dc37191d79521&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-alert">
+        <div class="product-alert__img">
+            <img src="img/cart-img.webp" alt="">
+        </div>
+        <div class="product-alert__content">
+            <div class="product-alert__mess text12">
+                Успешно добавлен в корзину
+            </div>
+            <div class="product-alert__title">
+                Кроссовки Nike Air Jordan 1 Mid Magenta (W)
+            </div>
+            <div class="product-card__prices">
+                <div class="product-card__price">
+                    3 149 ₽
+                </div>
+                <div class="product-card__price2">
+                    3 149 ₽
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal size-modal" id="sizeModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="h2 text-center">
+                Размерная таблица
+            </div>
+            <button class="close-btn _close-modal">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6.5L6 18.5" stroke="#929798" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6 6.5L18 18.5" stroke="#929798" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div class="size-table">
+                <div class="size-table__top">
+                    <div class="text16">Мужская</div>
+                </div>
+                <div class="size-table__rows">
+                    <div class="size-table__row">
+                        <div class="size-table__col">
+                            <span class="text15">USA</span>
+                        </div>
+                        <div class="size-table__cols">
+                            <div class="size-table__col"><span class="text14">6.0</span></div>
+                            <div class="size-table__col"><span class="text14">6.5</span></div>
+                            <div class="size-table__col"><span class="text14">7.0</span></div>
+                            <div class="size-table__col"><span class="text14">7.5</span></div>
+                            <div class="size-table__col"><span class="text14">8.0</span></div>
+                            <div class="size-table__col"><span class="text14">8.5</span></div>
+                            <div class="size-table__col"><span class="text14">9.0</span></div>
+                            <div class="size-table__col"><span class="text14">9.5</span></div>
+                            <div class="size-table__col"><span class="text14">10.0</span></div>
+                            <div class="size-table__col"><span class="text14">10.5</span></div>
+                            <div class="size-table__col"><span class="text14">11.0</span></div>
+                            <div class="size-table__col"><span class="text14">11.5</span></div>
+                            <div class="size-table__col"><span class="text14">12.0</span></div>
+                            <div class="size-table__col"><span class="text14">12.5</span></div>
+                            <div class="size-table__col"><span class="text14">13.0</span></div>
+                            <div class="size-table__col"><span class="text14">13.5</span></div>
+                            <div class="size-table__col"><span class="text14">14.0</span></div>
+                            <div class="size-table__col"><span class="text14">14.5</span></div>
+                            <div class="size-table__col"><span class="text14">15.0</span></div>
+                            <div class="size-table__col"><span class="text14">15.5</span></div>
+                            <div class="size-table__col"><span class="text14">16.0</span></div>
+                            <div class="size-table__col"><span class="text14">16.5</span></div>
+                            <div class="size-table__col"><span class="text14">17.0</span></div>
+                            <div class="size-table__col"><span class="text14">17.5</span></div>
+                            <div class="size-table__col"><span class="text14">18.0</span></div>
+                            <div class="size-table__col"><span class="text14">19.0</span></div>
+                            <div class="size-table__col"><span class="text14">20.0</span></div>
+                            <div class="size-table__col"><span class="text14">21.0</span></div>
+                            <div class="size-table__col"><span class="text14">22.0</span></div>
+                        </div>
+                    </div>
+                    <div class="size-table__row">
+                        <div class="size-table__col">
+                            <span class="text15">UK</span>
+                        </div>
+                        <div class="size-table__cols">
+                            <div class="size-table__col"><span class="text14">5.5</span></div>
+                            <div class="size-table__col"><span class="text14">6.0</span></div>
+                            <div class="size-table__col"><span class="text14">6.0</span></div>
+                            <div class="size-table__col"><span class="text14">6.5</span></div>
+                            <div class="size-table__col"><span class="text14">7.0</span></div>
+                            <div class="size-table__col"><span class="text14">7.5</span></div>
+                            <div class="size-table__col"><span class="text14">8.0</span></div>
+                            <div class="size-table__col"><span class="text14">8.5</span></div>
+                            <div class="size-table__col"><span class="text14">9.0</span></div>
+                            <div class="size-table__col"><span class="text14">9.5</span></div>
+                            <div class="size-table__col"><span class="text14">10.0</span></div>
+                            <div class="size-table__col"><span class="text14">10.5</span></div>
+                            <div class="size-table__col"><span class="text14">11.0</span></div>
+                            <div class="size-table__col"><span class="text14">11.5</span></div>
+                            <div class="size-table__col"><span class="text14">12.0</span></div>
+                            <div class="size-table__col"><span class="text14">12.5</span></div>
+                            <div class="size-table__col"><span class="text14">13.0</span></div>
+                            <div class="size-table__col"><span class="text14">13.5</span></div>
+                            <div class="size-table__col"><span class="text14">14.0</span></div>
+                            <div class="size-table__col"><span class="text14">14.5</span></div>
+                            <div class="size-table__col"><span class="text14">15.0</span></div>
+                            <div class="size-table__col"><span class="text14">15.5</span></div>
+                            <div class="size-table__col"><span class="text14">16.0</span></div>
+                            <div class="size-table__col"><span class="text14">16.5</span></div>
+                            <div class="size-table__col"><span class="text14">17.0</span></div>
+                            <div class="size-table__col"><span class="text14">18.0</span></div>
+                            <div class="size-table__col"><span class="text14">19.0</span></div>
+                            <div class="size-table__col"><span class="text14">20.0</span></div>
+                            <div class="size-table__col"><span class="text14">21.0</span></div>
+                        </div>
+                    </div>
+                    <div class="size-table__row">
+                        <div class="size-table__col">
+                            <span class="text15">EURO</span>
+                        </div>
+                        <div class="size-table__cols">
+                            <div class="size-table__col"><span class="text14">38.5</span></div>
+                            <div class="size-table__col"><span class="text14">39</span></div>
+                            <div class="size-table__col"><span class="text14">40</span></div>
+                            <div class="size-table__col"><span class="text14">40.5</span></div>
+                            <div class="size-table__col"><span class="text14">41</span></div>
+                            <div class="size-table__col"><span class="text14">42</span></div>
+                            <div class="size-table__col"><span class="text14">42.5</span></div>
+                            <div class="size-table__col"><span class="text14">43</span></div>
+                            <div class="size-table__col"><span class="text14">44</span></div>
+                            <div class="size-table__col"><span class="text14">44.5</span></div>
+                            <div class="size-table__col"><span class="text14">45</span></div>
+                            <div class="size-table__col"><span class="text14">45.5</span></div>
+                            <div class="size-table__col"><span class="text14">46</span></div>
+                            <div class="size-table__col"><span class="text14">47</span></div>
+                            <div class="size-table__col"><span class="text14">47.5</span></div>
+                            <div class="size-table__col"><span class="text14">48</span></div>
+                            <div class="size-table__col"><span class="text14">48.5</span></div>
+                            <div class="size-table__col"><span class="text14">49</span></div>
+                            <div class="size-table__col"><span class="text14">49.5</span></div>
+                            <div class="size-table__col"><span class="text14">50</span></div>
+                            <div class="size-table__col"><span class="text14">50.5</span></div>
+                            <div class="size-table__col"><span class="text14">51</span></div>
+                            <div class="size-table__col"><span class="text14">51.5</span></div>
+                            <div class="size-table__col"><span class="text14">52</span></div>
+                            <div class="size-table__col"><span class="text14">52.5</span></div>
+                            <div class="size-table__col"><span class="text14">53.5</span></div>
+                            <div class="size-table__col"><span class="text14">54.5</span></div>
+                            <div class="size-table__col"><span class="text14">55.5</span></div>
+                            <div class="size-table__col"><span class="text14">56.5</span></div>
+                        </div>
+                    </div>
+                    <div class="size-table__row">
+                        <div class="size-table__col">
+                            <span class="text15">CM</span>
+                        </div>
+                        <div class="size-table__cols">
+                            <div class="size-table__col"><span class="text14">24</span></div>
+                            <div class="size-table__col"><span class="text14">24.5</span></div>
+                            <div class="size-table__col"><span class="text14">25</span></div>
+                            <div class="size-table__col"><span class="text14">25.5</span></div>
+                            <div class="size-table__col"><span class="text14">26</span></div>
+                            <div class="size-table__col"><span class="text14">26.5</span></div>
+                            <div class="size-table__col"><span class="text14">27</span></div>
+                            <div class="size-table__col"><span class="text14">27.5</span></div>
+                            <div class="size-table__col"><span class="text14">28</span></div>
+                            <div class="size-table__col"><span class="text14">28.5</span></div>
+                            <div class="size-table__col"><span class="text14">29</span></div>
+                            <div class="size-table__col"><span class="text14">29.5</span></div>
+                            <div class="size-table__col"><span class="text14">30</span></div>
+                            <div class="size-table__col"><span class="text14">30.5</span></div>
+                            <div class="size-table__col"><span class="text14">31</span></div>
+                            <div class="size-table__col"><span class="text14">31.5</span></div>
+                            <div class="size-table__col"><span class="text14">32</span></div>
+                            <div class="size-table__col"><span class="text14">32.5</span></div>
+                            <div class="size-table__col"><span class="text14">33</span></div>
+                            <div class="size-table__col"><span class="text14">33.5</span></div>
+                            <div class="size-table__col"><span class="text14">34</span></div>
+                            <div class="size-table__col"><span class="text14">34.5</span></div>
+                            <div class="size-table__col"><span class="text14">35</span></div>
+                            <div class="size-table__col"><span class="text14">35.5</span></div>
+                            <div class="size-table__col"><span class="text14">36</span></div>
+                            <div class="size-table__col"><span class="text14">37</span></div>
+                            <div class="size-table__col"><span class="text14">38</span></div>
+                            <div class="size-table__col"><span class="text14">39</span></div>
+                            <div class="size-table__col"><span class="text14">40</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="size-table _type2">
+                <div class="size-table__top">
+                    <div class="text16">Женская</div>
+                </div>
+                <div class="size-table__rows">
+                    <div class="size-table__row">
+                        <div class="size-table__col">
+                            <span class="text15">USA</span>
+                        </div>
+                        <div class="size-table__cols">
+                            <div class="size-table__col"><span class="text14">4.0</span></div>
+                            <div class="size-table__col"><span class="text14">4.5</span></div>
+                            <div class="size-table__col"><span class="text14">5.0</span></div>
+                            <div class="size-table__col"><span class="text14">5.5</span></div>
+                            <div class="size-table__col"><span class="text14">6.0</span></div>
+                            <div class="size-table__col"><span class="text14">6.5</span></div>
+                            <div class="size-table__col"><span class="text14">7.0</span></div>
+                            <div class="size-table__col"><span class="text14">7.5</span></div>
+                            <div class="size-table__col"><span class="text14">8.0</span></div>
+                            <div class="size-table__col"><span class="text14">8.5</span></div>
+                            <div class="size-table__col"><span class="text14">9.0</span></div>
+                            <div class="size-table__col"><span class="text14">9.5</span></div>
+                            <div class="size-table__col"><span class="text14">10.0</span></div>
+                            <div class="size-table__col"><span class="text14">10.5</span></div>
+                            <div class="size-table__col"><span class="text14">11.0</span></div>
+                            <div class="size-table__col"><span class="text14">11.5</span></div>
+                            <div class="size-table__col"><span class="text14">12.0</span></div>
+                            <div class="size-table__col"><span class="text14">12.5</span></div>
+                            <div class="size-table__col"><span class="text14">13.0</span></div>
+                            <div class="size-table__col"><span class="text14">13.5</span></div>
+                            <div class="size-table__col"><span class="text14">14.0</span></div>
+                            <div class="size-table__col"><span class="text14">14.5</span></div>
+                            <div class="size-table__col"><span class="text14">15.0</span></div>
+                            <div class="size-table__col"><span class="text14">15.5</span></div>
+                            <div class="size-table__col"><span class="text14">16.0</span></div>
+                        </div>
+                    </div>
+                    <div class="size-table__row">
+                        <div class="size-table__col">
+                            <span class="text15">UK</span>
+                        </div>
+                        <div class="size-table__cols">
+                            <div class="size-table__col"><span class="text14">1.5</span></div>
+                            <div class="size-table__col"><span class="text14">2.0</span></div>
+                            <div class="size-table__col"><span class="text14">2.5</span></div>
+                            <div class="size-table__col"><span class="text14">3.0</span></div>
+                            <div class="size-table__col"><span class="text14">3.5</span></div>
+                            <div class="size-table__col"><span class="text14">4.0</span></div>
+                            <div class="size-table__col"><span class="text14">4.5</span></div>
+                            <div class="size-table__col"><span class="text14">5.0</span></div>
+                            <div class="size-table__col"><span class="text14">5.5</span></div>
+                            <div class="size-table__col"><span class="text14">6.0</span></div>
+                            <div class="size-table__col"><span class="text14">6.5</span></div>
+                            <div class="size-table__col"><span class="text14">7.0</span></div>
+                            <div class="size-table__col"><span class="text14">7.5</span></div>
+                            <div class="size-table__col"><span class="text14">8.0</span></div>
+                            <div class="size-table__col"><span class="text14">8.5</span></div>
+                            <div class="size-table__col"><span class="text14">9.0</span></div>
+                            <div class="size-table__col"><span class="text14">9.5</span></div>
+                            <div class="size-table__col"><span class="text14">10.0</span></div>
+                            <div class="size-table__col"><span class="text14">10.5</span></div>
+                            <div class="size-table__col"><span class="text14">11.0</span></div>
+                            <div class="size-table__col"><span class="text14">11.5</span></div>
+                            <div class="size-table__col"><span class="text14">12.0</span></div>
+                            <div class="size-table__col"><span class="text14">12.5</span></div>
+                            <div class="size-table__col"><span class="text14">13.0</span></div>
+                            <div class="size-table__col"><span class="text14">13.5</span></div>
+                        </div>
+                    </div>
+                    <div class="size-table__row">
+                        <div class="size-table__col">
+                            <span class="text15">EURO</span>
+                        </div>
+                        <div class="size-table__cols">
+                            <div class="size-table__col"><span class="text14">34.5</span></div>
+                            <div class="size-table__col"><span class="text14">35</span></div>
+                            <div class="size-table__col"><span class="text14">35.5</span></div>
+                            <div class="size-table__col"><span class="text14">36</span></div>
+                            <div class="size-table__col"><span class="text14">36.5</span></div>
+                            <div class="size-table__col"><span class="text14">37.5</span></div>
+                            <div class="size-table__col"><span class="text14">38</span></div>
+                            <div class="size-table__col"><span class="text14">38.5</span></div>
+                            <div class="size-table__col"><span class="text14">39</span></div>
+                            <div class="size-table__col"><span class="text14">40</span></div>
+                            <div class="size-table__col"><span class="text14">40.5</span></div>
+                            <div class="size-table__col"><span class="text14">41</span></div>
+                            <div class="size-table__col"><span class="text14">42</span></div>
+                            <div class="size-table__col"><span class="text14">42.5</span></div>
+                            <div class="size-table__col"><span class="text14">43</span></div>
+                            <div class="size-table__col"><span class="text14">44</span></div>
+                            <div class="size-table__col"><span class="text14">44.5</span></div>
+                            <div class="size-table__col"><span class="text14">45</span></div>
+                            <div class="size-table__col"><span class="text14">45.5</span></div>
+                            <div class="size-table__col"><span class="text14">46</span></div>
+                            <div class="size-table__col"><span class="text14">47</span></div>
+                            <div class="size-table__col"><span class="text14">47.5</span></div>
+                            <div class="size-table__col"><span class="text14">48</span></div>
+                            <div class="size-table__col"><span class="text14">48.5</span></div>
+                            <div class="size-table__col"><span class="text14">49</span></div>
+                        </div>
+                    </div>
+                    <div class="size-table__row">
+                        <div class="size-table__col">
+                            <span class="text15">CM</span>
+                        </div>
+                        <div class="size-table__cols">
+                            <div class="size-table__col"><span class="text14">21</span></div>
+                            <div class="size-table__col"><span class="text14">21.5</span></div>
+                            <div class="size-table__col"><span class="text14">22</span></div>
+                            <div class="size-table__col"><span class="text14">22.5</span></div>
+                            <div class="size-table__col"><span class="text14">23</span></div>
+                            <div class="size-table__col"><span class="text14">23.5</span></div>
+                            <div class="size-table__col"><span class="text14">24</span></div>
+                            <div class="size-table__col"><span class="text14">24.5</span></div>
+                            <div class="size-table__col"><span class="text14">25</span></div>
+                            <div class="size-table__col"><span class="text14">25.5</span></div>
+                            <div class="size-table__col"><span class="text14">26</span></div>
+                            <div class="size-table__col"><span class="text14">26.5</span></div>
+                            <div class="size-table__col"><span class="text14">27</span></div>
+                            <div class="size-table__col"><span class="text14">27.5</span></div>
+                            <div class="size-table__col"><span class="text14">28</span></div>
+                            <div class="size-table__col"><span class="text14">28.5</span></div>
+                            <div class="size-table__col"><span class="text14">29</span></div>
+                            <div class="size-table__col"><span class="text14">29.5</span></div>
+                            <div class="size-table__col"><span class="text14">30</span></div>
+                            <div class="size-table__col"><span class="text14">30.5</span></div>
+                            <div class="size-table__col"><span class="text14">31</span></div>
+                            <div class="size-table__col"><span class="text14">31.5</span></div>
+                            <div class="size-table__col"><span class="text14">32</span></div>
+                            <div class="size-table__col"><span class="text14">32.5</span></div>
+                            <div class="size-table__col"><span class="text14">33</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cookie-modal _active">
+        <div class="container">
+            <div class="cookie-modal__inner">
+                <img src="img/cookie-icon.svg" alt="" class="cookie-modal__icon">
+                <div class="cookie-modal__content">
+                    <div class="cookie-modal__desc">
+                        Этот сайт использует <a href="">cookie</a> для хранения данных. Продолжая использовать сайт, Вы даете свое согласие на работу с этими файлами.
+                    </div>
+                </div>
+                <div class="cookie-modal__nav">
+                    <button class="cookie-modal__btn m-btn m-btn-blue">
+                        <span>Понятно</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
