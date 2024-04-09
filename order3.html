@@ -8,7 +8,7 @@
     <meta name="keywords" content="">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Восстановление пароля</title>
+    <title>Оформление заказа</title>
 </head>
 
 <body class="m-page">
@@ -498,22 +498,365 @@
                 <div class="container">
                     <ul class="breadcrumbs">
                         <li><a href="">Главная</a></li>
-                        <li><a>Восстановление пароля</a></li>
+                        <li><a>Оформление заказа</a></li>
                     </ul>
                     <h1 class="h2">
-                        Восстановление пароля
+                        Оформление заказа
                     </h1>
                 </div>
             </div>
 
-            <div class="auth">
+            <div class="order">
                 <div class="container">
-                    <form class="login-form _type2">
-                        <img src="img/info.svg" alt="" class="login-form__icon">
-                        <div class="login-form__hint">
-                            Ссылка для сброса пароля и дальнейших инструкций отправлена вам на почту. Перейдите по ссылке и следуйте дальнейшим инструкциям.
+                    <div class="order__grid">
+                        <div class="order__col">
+                            <div class="has-reg _flex">
+                                <div class="has-reg__info _flex">
+                                    <img src="img/user.svg" alt="">
+                                    <span class="text17">Уже есть аккаунт?</span>
+                                </div>
+                                <button data-modal="loginModal" class="has-reg__btn m-btn m-btn-black">
+                                    <span>Авторизоваться</span>
+                                </button>
+                            </div>
+
+
+                            <div class="user-data">
+                                <div class="order__subtitle text28 semi-bold-text">
+                                    Данные
+                                </div>
+                                <div class="user-data__fields">
+                                    <div class="fg">
+                                        <label>Имя <span>*</span></label>
+                                        <input type="text" placeholder="Введите имя">
+                                    </div>
+                                    <div class="fg">
+                                        <label>Фамилия <span>*</span></label>
+                                        <input type="text" placeholder="Введите фамилию">
+                                    </div>
+                                    <div class="fg">
+                                        <label>Email <span>*</span></label>
+                                        <input type="email" placeholder="Введите почту">
+                                    </div>
+                                    <div class="fg">
+                                        <label>
+                                            Телефон <span>*</span>
+                                        </label>
+                                        <input type="tel" placeholder="+7 (000) 000-00-00">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="user-data user-data--border">
+                                <div class="order-delivery">
+                                    <div class="order-delivery__top">
+                                        <div class="order-delivery__name">
+                                            Адрес магазина: г. Артём, ул. Пионерская 1 стр 2
+                                        </div>
+                                        <div class="order-delivery__type">
+                                            <img src="img/marker2.svg" alt="">
+                                            <span>Самовывоз</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="user-data user-data--border">
+                                <div class="order__subtitle text28 semi-bold-text">
+                                    Как и когда удобно получить заказ
+                                </div>
+                                <div class="delivery-type">
+                                    <div class="delivery-field">
+                                        <input type="radio" data-value="company" name="deliveryType">
+                                        <div class="delivery-field__inner">
+                                            <div class="delivery-field__content">
+                                                <div class="delivery-field__title">
+                                                    Сдэк
+                                                </div>
+                                                <div class="delivery-field__desc">
+                                                    Доставка через сервсис СДЭК до ПВЗ <br>
+                                                    или курьером до двери
+                                                </div>
+                                                <div class="delivery-field__items">
+                                                    <div class="m-radio">
+                                                        <input type="radio" data-value="office" name="deliveryType2">
+                                                        <label>
+                                                            <span>ПВЗ</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="m-radio">
+                                                        <input type="radio" data-value="courier" name="deliveryType2">
+                                                        <label><span>Курьером</span></label>
+                                                    </div>
+                                                </div>
+                                                <div class="delivery-field__office">
+                                                    <a href="" class="delivery-field__office-btn">Выбрать</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="delivery-field">
+                                        <input checked type="radio" data-value="self" name="deliveryType">
+                                        <div class="delivery-field__inner">
+                                            <div class="delivery-field__content">
+                                                <div class="delivery-field__title">
+                                                    Самовывоз
+                                                </div>
+                                                <div class="delivery-field__desc">
+                                                    Вы сможете забрать заказ по адресу: <br>
+                                                    <span>Г. Артём, ул. Пионерская 1 стр 2</span>
+                                                </div>
+                                                <div class="delivery-field__nav">
+                                                    <button data-modal="mapModal" class="delivery-field__btn">
+                                                        Показать на карте
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="user-data user-data--border">
+                                <div class="order__subtitle text28 semi-bold-text">
+                                    Способы оплаты
+                                </div>
+                                <div class="pay-type">
+                                    <div class="delivery-field">
+                                        <input type="radio" checked name="payType2">
+                                        <div class="delivery-field__inner">
+                                            <div class="delivery-field__content">
+                                                <div class="delivery-field__title">
+                                                    Оплата банковской картой на сайте
+                                                </div>
+                                                <div class="delivery-field__desc">
+                                                    Банковской картой Visa, Mastercard или МИР
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="delivery-field">
+                                        <input type="radio" name="payType2">
+                                        <div class="delivery-field__inner">
+                                            <div class="delivery-field__content">
+                                                <div class="delivery-field__title">
+                                                    Оплата при получении
+                                                </div>
+                                                <div class="delivery-field__desc">
+                                                    Оплата наличными при получении товара
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="user-data user-data--border">
+                                <div class="order__subtitle text28 semi-bold-text">
+                                    Комментарии
+                                </div>
+                                <div class="user-data__fields">
+                                    <div class="fg _full">
+                                        <textarea placeholder="Введите комментарии к заказу"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                    </form>
+                        <div class="order__col2">
+                            <div class="cart-sum order-sum">
+                                <div class="cart-sum__title">
+                                    Ваш заказ
+                                </div>
+                                <div class="cart-orders">
+                                    <div class="cart-row cart-row2 cart-table__grid">
+                                        <div class="cart-row__content">
+                                            <div class="cart-row__img">
+                                                <img src="img/cart-img.webp" alt="">
+                                            </div>
+                                            <div class="cart-row__info">
+                                                <div class="cart-row__title">
+                                                    <a href="">
+                                                        Кроссовки Nike Air Jordan 1 Mid Magenta (W)
+                                                    </a>
+                                                </div>
+                                                <div class="cart-row__props">
+                                                    <div class="cart-row__prop cart-row__color">
+                                                        <div class="cart-row__prop-title text12">
+                                                            Цвет:
+                                                        </div>
+                                                        <div class="color-view">
+                                                            <span style="background: #f4f4f4;"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cart-row__prop cart-row__size">
+                                                        <div class="cart-row__prop-title text12">
+                                                            Размер
+                                                        </div>
+                                                        <div class="cart-row__size-count text16">
+                                                            40
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="cart-row__prices">
+                                            <div class="cart-row__price">
+                                                <span data-num="7899" class="_price"></span> ₽
+                                            </div>
+                                            <div class="cart-row__price2">
+                                                <span class="_price-sale" data-num="7899">7899</span> ₽
+                                            </div>
+                                        </div>
+
+                                        <div class="cart-row__count">
+                                            <div class='cartcalc'>
+                                                <button class='ccalc-minus'>
+                                                    <svg width="17" height="2" viewBox="0 0 17 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 1H16" stroke="#2E3036" stroke-width="1.5" stroke-linecap="round" />
+                                                    </svg>
+                                                </button>
+                                                <input type='text' value='1'>
+                                                <button class='ccalc-plus'>
+                                                    <svg width="16" height="32" viewBox="0 0 16 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M8.01243 22.702L7.94464 15.9142L14.7325 15.8464" stroke="#2E3036" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M0.998721 15.8063L7.78691 15.788L7.76864 8.99981" stroke="#2E3036" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="cart-row__sum _all-price">
+                                            <div class="cart-row__price">
+                                                <span data-num="7899" class="_price-sum"></span> ₽
+                                            </div>
+                                            <div class="cart-row__price2">
+                                                <span class="_price-sale" data-num="7899">7899</span> ₽
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cart-row cart-row2 cart-table__grid">
+                                        <div class="cart-row__content">
+                                            <div class="cart-row__img">
+                                                <img src="img/cart-img2.webp" alt="">
+                                            </div>
+                                            <div class="cart-row__info">
+                                                <div class="cart-row__title">
+                                                    <a href="">
+                                                        Кроссовки Nike Air Jordan 1 Mid Magenta (W)
+                                                    </a>
+                                                </div>
+                                                <div class="cart-row__props">
+                                                    <div class="cart-row__prop cart-row__color">
+                                                        <div class="cart-row__prop-title text12">
+                                                            Цвет:
+                                                        </div>
+                                                        <div class="color-view">
+                                                            <span style="background: #f4f4f4;"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cart-row__prop cart-row__size">
+                                                        <div class="cart-row__prop-title text12">
+                                                            Размер
+                                                        </div>
+                                                        <div class="cart-row__size-count text16">
+                                                            40
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="cart-row__prices">
+                                            <div class="cart-row__price">
+                                                <span data-num="7899" class="_price"></span> ₽
+                                            </div>
+                                            <div class="cart-row__price2">
+                                                <span class="_price-sale" data-num="7899">7899</span> ₽
+                                            </div>
+                                        </div>
+
+                                        <div class="cart-row__count">
+                                            <div class='cartcalc'>
+                                                <button class='ccalc-minus'>
+                                                    <svg width="17" height="2" viewBox="0 0 17 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 1H16" stroke="#2E3036" stroke-width="1.5" stroke-linecap="round" />
+                                                    </svg>
+                                                </button>
+                                                <input type='text' value='1'>
+                                                <button class='ccalc-plus'>
+                                                    <svg width="16" height="32" viewBox="0 0 16 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M8.01243 22.702L7.94464 15.9142L14.7325 15.8464" stroke="#2E3036" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M0.998721 15.8063L7.78691 15.788L7.76864 8.99981" stroke="#2E3036" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="cart-row__sum _all-price">
+                                            <div class="cart-row__price">
+                                                <span data-num="7899" class="_price-sum"></span> ₽
+                                            </div>
+                                            <div class="cart-row__price2">
+                                                <span class="_price-sale" data-num="7899">7899</span> ₽
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="cart-sum__props">
+                                    <div class="prop-item">
+                                        <div class="prop-item__title">
+                                            Сумма
+                                        </div>
+                                        <div class="prop-item__desc _big primary-text">
+                                            35 453 ₽
+                                        </div>
+                                    </div>
+                                    <div class="prop-item">
+                                        <div class="prop-item__title">
+                                            Доставка
+                                        </div>
+                                        <div class="prop-item__desc _big primary-text">
+                                            0
+                                        </div>
+                                    </div>
+                                    <div class="prop-item">
+                                        <div class="prop-item__title">
+                                            Итого
+                                        </div>
+                                        <div class="prop-item__desc _big primary-text">
+                                            35 453 ₽
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-sum__sale">
+                                    <div class="cart-sum__sale-title">
+                                        <span>Скидка по промокоду:</span> DCSDGRGJ6734G
+                                    </div>
+                                    <div class="cart-sum__sale-num">
+                                        -500₽
+                                    </div>
+                                </div>
+                                <div class="cart-sum__nav">
+                                    <a href="" class="cart-sum__btn m-btn m-btn-blue">
+                                        <span>оформить</span>
+                                    </a>
+                                </div>
+                                <div class="cart-sum__hint2">
+                                    <div class="text13 text12-tablet">
+                                        Нажимая кнопку подтверждаю согласен с <a href="">политикой конфиденциальности</a> и обработкой персональных данных
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
 
